@@ -1,0 +1,30 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Sample API",
+    "description": "Sample API for demonstration"
+  },
+  "paths": {
+    "/hello": {
+      "get": {
+        "summary": "Get Hello",
+        "description": "Returns a greeting message",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Hello, world!"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
